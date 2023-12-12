@@ -5,39 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Add this script tag to include Okta Auth SDK -->
-   <script src="https://global.oktacdn.com/okta-signin-widget/7.13.1/js/okta-sign-in.min.js" type="text/javascript"></script>
-
-<link href="https://global.oktacdn.com/okta-signin-widget/7.13.1/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
-<!-- Add your JavaScript code for configuring the Okta client here -->
-  <script type="text/javascript">
-    // Initialize Okta Auth SDK
-    const oktaConfig = {
-      baseUrl: 'https://dev-42376659.okta.com',
-      clientId: '0oadr9pzkz4qTmgJf5d7',
-      redirectUri: 'https://hobbies.shashirautela.com/login/callback', // Should match the redirect URI configured in Okta
-    };
-    // Ensure OktaAuth is defined before using it
-    if (typeof OktaAuth !== 'undefined') {
-    const oktaAuth = new OktaAuth(oktaConfig);
-         } else {
-      console.error('OktaAuth is not defined. Make sure the Okta Auth SDK script is loaded.');
-    }
-  </script>
 
 </head>
 <body>
 
 
-    <!-- Your website content goes here -->
-
   <!-- Example login and logout buttons -->
 
-    <!-- Include your JavaScript file -->
-   <script src="app.js"></script>
 
   <button onclick="login()">Login</button>
   <button onclick="logout()">Logout</button>
+
+ <!-- Include your JavaScript file -->
+   <script src="app.js"></script>
 
   <!-- Add the rest of your HTML content -->
 
