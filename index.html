@@ -15,10 +15,14 @@
     const oktaConfig = {
       baseUrl: 'https://dev-42376659.okta.com',
       clientId: '0oadr9pzkz4qTmgJf5d7',
-      redirectUri: window.location.origin + '/login/callback', // Should match the redirect URI configured in Okta
+      redirectUri: 'https://hobbies.shashirautela.com/login/callback', // Should match the redirect URI configured in Okta
     };
-
+    // Ensure OktaAuth is defined before using it
+    if (typeof OktaAuth !== 'undefined') {
     const oktaAuth = new OktaAuth(oktaConfig);
+         } else {
+      console.error('OktaAuth is not defined. Make sure the Okta Auth SDK script is loaded.');
+    }
   </script>
 
 </head>
